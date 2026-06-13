@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Lock, CheckCircle, MessageSquare, Radio, Crown, LogOut, Eye, EyeOff } from 'lucide-react';
-import { Lock, CheckCircle, MessageSquare, Radio, Crown, LogOut, Eye, EyeOff } from 'lucide-react';
-import SigilBorder from '../components/SigilBorder';
-import SigilSymbol from '../components/SigilSymbol';
-import { supabase } from '../lib/supabase';
-import type { MembershipTier } from '../types';
-import type { User } from '@supabase/supabase-js';
-import type { MembershipTier } from '../types';
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
+import { supabase } from './supabase';
+import type { MembershipTier } from './index';
 import type { User } from '@supabase/supabase-js';
 
 type AuthMode = 'login' | 'register';
