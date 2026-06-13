@@ -10,9 +10,7 @@ import SigilBorder from './SigilBorder';
 import SigilSymbol from './SigilSymbol';
 import { supabase } from './supabase';
 import type { Product } from './index';
-```
 
-Fix it, commit, then open **`QuizPage.tsx`** — first 5 lines.
 
 const CATEGORIES = ['all', 'apparel', 'posters', 'stickers', 'accessories'];
 
