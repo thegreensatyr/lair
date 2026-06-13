@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Calendar, CheckCircle, Music, ExternalLink, Camera, FileText, Mail } from 'lucide-react';
-import SigilBorder from '../components/SigilBorder';
-import SigilSymbol from '../components/SigilSymbol';
-import { supabase } from '../lib/supabase';
-import type { BookingRequest } from '../types';
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
+import { supabase } from './supabase';
+import type { BookingRequest } from './index';
 
 const EVENT_TYPES = [
   { value: 'club_set', label: 'Club Set', desc: '3–5 hour main floor set', price: 'From $800' },
