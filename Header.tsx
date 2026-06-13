@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import type { Page } from '../types';
+import type { Page } from './index';
 
 interface HeaderProps {
   currentPage: Page;
