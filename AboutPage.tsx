@@ -1,7 +1,6 @@
 import { Mail, Download, Instagram, Twitter, Youtube, Music2, ExternalLink } from 'lucide-react';
-import SigilBorder from '../components/SigilBorder';
-import SigilSymbol from '../components/SigilSymbol';
-
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
 const pressPhotos = [
   { src: 'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop', caption: 'Press Photo 1' },
   { src: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop', caption: 'Press Photo 2' },
