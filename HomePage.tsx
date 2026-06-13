@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Play, MapPin, Clock } from 'lucide-react';
-import type { Page } from '../types';
+import type { Page } from './index';
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
