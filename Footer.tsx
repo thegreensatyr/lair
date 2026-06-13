@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Instagram, Twitter, Youtube, Music2, Mail, ExternalLink } from 'lucide-react';
-import type { Page } from '../types';
-import { supabase } from '../lib/supabase';
+import type { Page } from './index';
+import { supabase } from './supabase';
 
 interface FooterProps {
   onNavigate: (page: Page) => void;
