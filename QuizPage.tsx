@@ -1,7 +1,20 @@
 import { useEffect, useState } from 'react';
 import { ChevronRight, ChevronLeft, Star, RotateCcw, Mail, Share2 } from 'lucide-react';
-import { supabase } from '../lib/supabase';
-import type { Page } from '../types';
+import { supabase } from './supabase';
+import type { Page } from './index';
+
+```typescript
+import { supabase } from './supabase';
+import type { Page } from './index';
+```
+
+Fix it, commit, then open **`ReleasesPage.tsx`** — first 5 lines.
+```typescript
+import { supabase } from './supabase';
+import type { Page } from './index';
+```
+
+Fix it, commit, then open **`ReleasesPage.tsx`** — first 5 lines.
 
 interface QuizPageProps {
   onNavigate: (page: Page) => void;
