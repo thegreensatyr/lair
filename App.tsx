@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import MerchPage from './pages/MerchPage';
-import DownloadsPage from './pages/DownloadsPage';
-import BookingPage from './pages/BookingPage';
-import ListeningPage from './pages/ListeningPage';
-import MembershipPage from './pages/MembershipPage';
-import AboutPage from './pages/AboutPage';
-import ReleasesPage from './pages/ReleasesPage';
-import ArcanaPage from './pages/ArcanaPage';
-import QuizPage from './pages/QuizPage';
-import ManualPage from './pages/ManualPage';
+import Header from './Header';
+import Footer from './Footer';
+import HomePage from './HomePage';
+import MerchPage from './MerchPage';
+import DownloadsPage from './DownloadsPage';
+import BookingPage from './BookingPage';
+import ListeningPage from './ListeningPage';
+import MembershipPage from './MembershipPage';
+import AboutPage from './AboutPage';
+import ReleasesPage from './ReleasesPage';
+import ArcanaPage from './ArcanaPage';
+import QuizPage from './QuizPage';
+import ManualPage from './ManualPage';
 import type { Page } from './types';
 
 export default function App() {
