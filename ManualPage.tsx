@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BookOpen, ChevronRight, ChevronDown, Code2, Database, LayoutGrid as Layout, Palette, Globe, Package, Music, Calendar, Users, ShoppingBag, Download, Mic2, Star, HelpCircle, FileText, Zap, AlertTriangle, CheckCircle, Copy, Eye, CreditCard as Edit3, Plus, Trash2, ToggleLeft, Link, Settings, MessageSquare, Image as ImageIcon } from 'lucide-react';
-import type { Page } from '../types';
+import type { Page } from './index';
 
 interface ManualPageProps {
   onNavigate: (page: Page) => void;
