@@ -5,12 +5,6 @@ import SigilSymbol from './SigilSymbol';
 import { supabase } from './supabase';
 import type { Product } from './index';
 
-```typescript
-import SigilBorder from './SigilBorder';
-import SigilSymbol from './SigilSymbol';
-import { supabase } from './supabase';
-import type { Product } from './index';
-
 
 const CATEGORIES = ['all', 'apparel', 'posters', 'stickers', 'accessories'];
 
