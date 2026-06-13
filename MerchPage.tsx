@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react';
 import { ShoppingCart, Plus, Minus, X, Package, ChevronDown } from 'lucide-react';
-import SigilBorder from '../components/SigilBorder';
-import SigilSymbol from '../components/SigilSymbol';
-import { supabase } from '../lib/supabase';
-import type { Product } from '../types';
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
+import { supabase } from './supabase';
+import type { Product } from './index';
+
+```typescript
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
+import { supabase } from './supabase';
+import type { Product } from './index';
+```
+
+Fix it, commit, then open **`QuizPage.tsx`** — first 5 lines.
 
 const CATEGORIES = ['all', 'apparel', 'posters', 'stickers', 'accessories'];
 
