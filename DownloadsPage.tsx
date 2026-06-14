@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
-import { Download, Play, Pause, Music, BookOpen, Layers, FileAudio } from 'lucide-react';
-import SigilBorder from '../components/SigilBorder';
-import SigilSymbol from '../components/SigilSymbol';
-import { supabase } from '../lib/supabase';
-import type { DigitalProduct } from '../types';
+import SigilBorder from './SigilBorder';
+import SigilSymbol from './SigilSymbol';
+import { supabase } from './supabase';
+import type { DigitalProduct } from './index';
 
 const CATEGORIES = ['all', 'track', 'mix', 'sample_pack', 'book'];
 
