@@ -12,7 +12,7 @@ import ReleasesPage from './ReleasesPage';
 import ArcanaPage from './ArcanaPage';
 import QuizPage from './QuizPage';
 import ManualPage from './ManualPage';
-import type { Page } from './types';
+import type { Page } from './index';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
