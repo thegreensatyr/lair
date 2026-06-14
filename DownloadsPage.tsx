@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+import { Download, Play, Pause, Music, BookOpen, Layers, FileAudio } from 'lucide-react';
 import SigilBorder from './SigilBorder';
 import SigilSymbol from './SigilSymbol';
 import { supabase } from './supabase';
