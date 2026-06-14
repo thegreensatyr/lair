@@ -3,19 +3,6 @@ import { ChevronRight, ChevronLeft, Star, RotateCcw, Mail, Share2 } from 'lucide
 import { supabase } from './supabase';
 import type { Page } from './index';
 
-```typescript
-import { supabase } from './supabase';
-import type { Page } from './index';
-```
-
-Fix it, commit, then open **`ReleasesPage.tsx`** — first 5 lines.
-```typescript
-import { supabase } from './supabase';
-import type { Page } from './index';
-```
-
-Fix it, commit, then open **`ReleasesPage.tsx`** — first 5 lines.
-
 interface QuizPageProps {
   onNavigate: (page: Page) => void;
 }
@@ -138,7 +125,6 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
       source: 'quiz',
     });
 
-    // Also subscribe to newsletter
     if (email) {
       await supabase.from('newsletter_subscribers').upsert({ email }, { onConflict: 'email' });
     }
@@ -304,7 +290,6 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
                       boxShadow: isChosen ? '0 0 20px rgba(57,255,20,0.12)' : 'none',
                     }}
                   >
-                    {/* Letter indicator */}
                     <div
                       className="flex-shrink-0 w-7 h-7 flex items-center justify-center font-mono text-xs font-bold mt-0.5"
                       style={{
@@ -421,7 +406,6 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
         {/* ── RESULT ── */}
         {step === 'result' && result && (
           <div className="text-center">
-            {/* Result card */}
             <div
               className="mb-8 p-8 relative overflow-hidden"
               style={{
@@ -430,10 +414,8 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
                 boxShadow: `0 0 60px ${result.color}15`,
               }}
             >
-              {/* Background glow */}
               <div className="absolute inset-0 pointer-events-none" style={{ background: `radial-gradient(ellipse at 50% 0%, ${result.color}12 0%, transparent 65%)` }} />
 
-              {/* Corner brackets */}
               {[
                 'top-3 left-3 border-t-2 border-l-2',
                 'top-3 right-3 border-t-2 border-r-2',
@@ -469,7 +451,6 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
               </div>
             </div>
 
-            {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
               <button
                 onClick={() => onNavigate(RESULT_CTA_PAGES[result.slug] ?? 'home')}
@@ -494,7 +475,6 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
               </button>
             </div>
 
-            {/* Other archetypes teaser */}
             <div className="mb-8" style={{ borderTop: '1px solid rgba(57,255,20,0.08)', paddingTop: '2rem' }}>
               <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: 'rgba(232,232,232,0.3)' }}>Other Archetypes</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -526,3 +506,4 @@ export default function QuizPage({ onNavigate }: QuizPageProps) {
     </div>
   );
 }
+
